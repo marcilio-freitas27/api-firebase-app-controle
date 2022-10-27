@@ -1,0 +1,15 @@
+{
+  "name": "api-firebase-app-controle",
+  "version": "1.0.0",
+  "description": "Api para comunicação entre firebase e o app de controle e monitoramento de energia(react native).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Marcílio Freitas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

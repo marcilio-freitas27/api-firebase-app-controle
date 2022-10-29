@@ -12,4 +12,4 @@ app.get("/", verify, (req, res, next) => {
 
 app.post('/login', login);
 
-app.listen(8080, ()=> console.log('listen on http://localhost:8080'));
+app.listen(process.env.PORT, ()=> console.log('listen on http://localhost:8080'));

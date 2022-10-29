@@ -10,6 +10,10 @@
   "author": "Marcílio Freitas",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.2.0",
+    "firebase-functions": "^4.0.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }

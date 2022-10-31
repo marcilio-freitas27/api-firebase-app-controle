@@ -1,5 +1,6 @@
 const express = require('express');
 const login = require('./routes/login')
+const logout = require('./routes/logout')
 const app = express();
 const verify = require('./functions/verify');
  

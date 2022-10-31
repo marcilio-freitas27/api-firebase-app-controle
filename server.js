@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/", verify, (req, res, next) => {
     res.json([{"status":'Conectado'}]);
 })
-
 app.post('/login', login);
+app.post('/logout', logout);
 
 app.listen(process.env.PORT, ()=> console.log('listen on http://localhost:8080'));

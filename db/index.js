@@ -2,10 +2,10 @@ const mysql = require('mysql');
 const express = require('express');
 
 const con = new mysql.createConnection({
-    host: 'localhost',
-    user:'root',
-    password: '',
-    database: 'dbusuario'
+    host: 'us-cdbr-east-06.cleardb.net',
+    user:'bb4cf6cb17111a',
+    password: 'ce1d05d7',
+    database: 'heroku_c64cf4ce1275151'
   })
 
 const app = express();

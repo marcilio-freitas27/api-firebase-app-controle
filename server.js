@@ -4,7 +4,7 @@ const logout = require('./routes/logout')
 const app = express();
 const verify = require('./functions/verify');
 const dados = require('./db/index')
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT
  
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

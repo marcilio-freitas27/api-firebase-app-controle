@@ -5,16 +5,16 @@ const app = express();
 const verify = require('./functions/verify');
 const dados = require('./db/index')
 const PORT = process.env.PORT
+const connection = require('./db/index');
  
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.get('/con', connection);
 
 app.get("/", verify, (req, res, next) => {
     res.json([{"status":'Conectado'}]);
 })
 
+app.get('/con', connection);
 app.get("/dados", dados);
 app.post("/dados", dados);
 app.post('/login', login);

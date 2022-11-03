@@ -9,6 +9,8 @@ const PORT = process.env.PORT
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.get('/con', connection);
+
 app.get("/", verify, (req, res, next) => {
     res.json([{"status":'Conectado'}]);
 })

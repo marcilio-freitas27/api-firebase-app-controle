@@ -10,6 +10,14 @@ const con = new mysql.createConnection({
 
 const app = express();
 
+app.get('/con',(req, res) => {
+  if (con) {
+    res.status(200).send('Conectado');
+  } else {
+    res.status(404).send('Desconectado');
+  }
+})
+
 app.get('/dados', (req, res)=>{
     con.query('SELECT * FROM clientes',(err, result) => {
       if(err) {

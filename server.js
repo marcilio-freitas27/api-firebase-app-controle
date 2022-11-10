@@ -3,7 +3,7 @@ const login = require('./routes/login')
 const logout = require('./routes/logout')
 const verify = require('./functions/verify');
 const dados = require('./db/index')
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const connection = require('./db/index');
 
 const app = express();
@@ -21,4 +21,4 @@ app.post('/dados', dados);
 app.post('/login', login);
 app.post('/logout', logout);
 
-app.listen(PORT, ()=> console.log('listen on http://localhost:8080'));
+app.listen(PORT, ()=> console.log('listen on http://localhost:5000'));

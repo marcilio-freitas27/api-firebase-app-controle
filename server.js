@@ -3,7 +3,7 @@ const login = require('./routes/login')
 const logout = require('./routes/logout')
 const verify = require('./functions/verify');
 const dados = require('./db/index')
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000;
 const connection = require('./db/index');
 
 const app = express();

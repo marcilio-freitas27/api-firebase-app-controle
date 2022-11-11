@@ -1,5 +1,5 @@
-// require("dotenv-safe").config({path: __dirname + '/.env'});
-require("dotenv-safe").config({silent: true});
+require("dotenv-safe").config({path: __dirname + '/.env'});
+// require("dotenv-safe").config({silent: true});
 const jwt = require("jsonwebtoken");
 const verify = (req, res, next) => {
   const token = req.headers["x-access-token"];

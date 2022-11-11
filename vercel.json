@@ -10,6 +10,22 @@
       {
         "src": "/(.*)",
         "dest": "server.js"
+      },
+      {
+        "src": "/login",
+        "dest": "login.js"
+      },
+      {
+        "src": "/logout",
+        "dest": "logout.js"
+      },
+      {
+        "src": "/con",
+        "dest": "index.js"
+      },
+      {
+        "src": "/dados",
+        "dest": "index.js"
       }
     ]
   }

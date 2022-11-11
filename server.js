@@ -1,9 +1,9 @@
 const express = require('express');
 const login = require('./routes/login')
 const logout = require('./routes/logout')
-// const verify = require('./functions/verify');
+const verify = require('./functions/verify');
 const dados = require('./db/index')
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const connection = require('./db/index');
 
 const app = express();
@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res, next) => {
+app.get("/", verify, (req, res, next) => {
     res.json([{"status":'Conectado'}]);
 })
 

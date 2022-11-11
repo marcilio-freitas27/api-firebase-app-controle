@@ -1,4 +1,4 @@
-require("dotenv-safe").config({path: __dirname + '/.env'});
+require("dotenv-safe").config({path: __dirname + '/.env.example'});
 // require("dotenv-safe").config({silent: true});
 const jwt = require("jsonwebtoken");
 const verify = (req, res, next) => {

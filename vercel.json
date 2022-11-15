@@ -27,11 +27,5 @@
         "src": "/dados",
         "dest": "index.js"
       }
-    ],
-    "functions": {
-      "functions/verify.js": {
-        "memory": 3008,
-        "maxDuration": 30
-      }
-    }
+    ]
   }

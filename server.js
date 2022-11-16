@@ -5,9 +5,11 @@ const verify = require('./functions/verify');
 const dados = require('./db/index')
 const PORT = process.env.PORT || 5000;
 const connection = require('./db/index');
+const cors = require('cors')
 
 const app = express();
- 
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
